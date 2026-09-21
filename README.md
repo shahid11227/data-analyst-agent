@@ -62,3 +62,5 @@ local smoke-testing during development, not the dataset shown above.
 - Cache repeated tool calls.
 - Add a fully local/offline mode via Ollama, as a fallback if Groq is down.
 - Deploy on Streamlit Community Cloud and link the live app from your portfolio.
+
+-Live Link https://data-analyst-agent-fquwxtn8cxcqdjhwqn8th6.streamlit.app/
