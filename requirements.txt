@@ -1,0 +1,8 @@
+streamlit
+pandas
+duckdb
+tabulate
+matplotlib
+langchain>=1.0
+langchain-groq
+python-dotenv
