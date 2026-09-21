@@ -1,5 +1,7 @@
 # Data Analyst Agent
 
+**By Shahid Ahmad Sheer Gojree** · [Portfolio](https://shahid11227.github.io/shahid_portfolio) · [LinkedIn](https://www.linkedin.com/in/shahid-gojree-082857389/)
+
 An AI agent that profiles a dataset, writes SQL, runs custom Python analysis,
 and draws charts -- all from natural-language questions in a chat interface.
 
@@ -14,8 +16,8 @@ and draws charts -- all from natural-language questions in a chat interface.
    - `run_sql` -- DuckDB SQL against the dataset
    - `run_python` -- pandas/matplotlib for anything SQL can't express (custom
      calculations, multi-step logic, charts)
-4. The LLM is Llama 3.3 70B served for free via Groq -- no local GPU, no paid
-   API key.
+4. The LLM is `openai/gpt-oss-120b`, served for free via Groq -- no local GPU,
+   no paid API key.
 5. The agent's answer, and any chart it drew, render back in the chat.
 
 ## Setup
@@ -29,18 +31,20 @@ and draws charts -- all from natural-language questions in a chat interface.
 ## Example questions to try
 
 - "What columns are in this data and are there any missing values?"
-- "What's the total revenue by category?" (quantity x unit_price)
-- "Show me a bar chart of average order value by region."
-- "Which category has the most orders, and how does that compare to the others?"
+- "How many products are in each category?"
+- "What are the top 10 highest-rated products?"
+- "Which category has the highest average market price?"
+- "Show a bar chart of average discount percentage by category."
 
 ## Dataset
 
-> **Before you publish this to your portfolio:** name the real dataset you
-> used, where it came from (a link), and any cleaning/preprocessing you did.
-> `sample_data.csv` in this repo is a small **synthetic** file generated
-> locally purely for testing the app end to end -- swap in a real,
-> clearly-sourced public dataset (e.g. Kaggle, UCI, data.gov.in) for the
-> version you show recruiters, and say so explicitly in this README.
+Analyzed dataset: [BigBasket Entire Product List](https://www.kaggle.com/datasets/surajjha101/bigbasket-entire-product-list-28k-datapoints)
+(Kaggle) -- roughly 28,000 grocery products sold on BigBasket, an Indian
+online grocery platform, with category, brand, sale price, market price,
+and customer rating per product.
+
+`sample_data.csv` in this repo is a small **synthetic** file used only for
+local smoke-testing during development, not the dataset shown above.
 
 ## Known limitations
 
